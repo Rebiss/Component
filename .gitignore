@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 desktop.ini
+package-lock.json
 
 # testing
 /coverage
