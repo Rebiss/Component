@@ -1,5 +1,22 @@
-.pie-chart-less {
-    height: 500px;
-    width: 900px;
-    border: 1px solid red;
+.chart-less {
+    display: inline-block;
+    /* height: 400px; */
+    width: 782px;
+    border: .2rem solid #ececec;
+    padding: 1%;
+}
+
+.pie {
+    position: relative;
+}
+
+.line {
+    margin-left: 1%;
+}
+
+.r-boos-spinner {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    right: 2%;
 }
