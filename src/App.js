@@ -7,6 +7,7 @@ import Giphy from './Component/Giphy/Gipgy';
 import Graph_D3 from './Component/Graph-D3/Graph_D3';
 import SendBoxChart from './Component/Chart/SendBoxChart'; 
 import Babelon from './Component/Babelon/Babelon';
+import Responsive from './Component/Responsive/Responsive'
 
 
 function App() {
