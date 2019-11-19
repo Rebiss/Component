@@ -23,7 +23,7 @@ const Charts = () => {
   )
 
   return ( 
-    <div className='line chart-less' style={{ height: '500px'}} >
+    <div className='line chart-less' style={{ height: '400px'}} >
       <Chart data={data} axes={axes} />
     </div>
   )

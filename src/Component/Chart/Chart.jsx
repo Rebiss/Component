@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Radar, Doughnut} from 'react-chartjs-2';
-import { Spinner } from 'react-bootstrap';
+import { Spinner, Carousel } from 'react-bootstrap';
+import Charts from './Charts';
 
 import './chart.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -67,20 +68,15 @@ const Chart = () => {
                 }}/>
             </div>
             <div className='line chart-less'>
-                <Radar
-                    data={bar}
-                    options={{
-                        title:{
-                            display: true,
-                            text:'Largest Cities In ',
-                            fontSize: 20
-                        },
-                        legend:{
-                            display: true,
-                            position: 'right'
-                        }
-                    }}
-                    />
+                <Carousel>
+                    <Carousel.Item>
+                        <Charts/>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <Charts/>
+                    </Carousel.Item>
+                </Carousel>
             </div>
         </>
     )

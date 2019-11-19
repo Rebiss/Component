@@ -1,18 +1,15 @@
 .chart-less {
     display: inline-block;
-    /* height: 400px; */
+    height: 500px;
     width: 782px;
     border: .2rem solid #ececec;
     padding: 1%;
     margin-top: 2%;
+    margin-right: 1%;
 }
 
 .pie {
     position: relative;
-}
-
-.line {
-    margin-left: 1%;
 }
 
 .r-boos-spinner {
