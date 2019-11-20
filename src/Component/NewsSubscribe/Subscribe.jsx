@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import '../NewsSubscribe/Subscribe.css'
 import FontAwesome from 'react-fontawesome'
-import faStyles from 'font-awesome/css/font-awesome.css'
+// import faStyles from 'font-awesome/css/font-awesome.css'
 
 const Subscribe = () => {
     return (
