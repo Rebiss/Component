@@ -10,14 +10,16 @@ import Babelon from './Component/Babelon/Babelon';
 import Responsive from './Component/Responsive/Responsive';
 import Subscribe from './Component/NewsSubscribe/Subscribe';
 import IndexGiphy from './Component/GiphyNew/IndexGiphy';
-import Form from './Component/Form/Form'
+import Form from './Component/Form/Form';
+import Ui from './Component/Form/Ui';
+import State from './Component/Hooks/useState'
 
 
 function App() {
 
   return (
     <> 
-      <Form /> 
+      <State /> 
     </>
   )
 }

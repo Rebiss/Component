@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.8.2",
+    "antd": "^3.26.6",
     "babelon": "^1.0.5",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
@@ -24,7 +26,8 @@
     "react-giphy-select": "^1.0.3",
     "react-hook-form": "^4.4.3",
     "react-responsive": "^8.0.1",
-    "react-scripts": "3.1.1"
+    "react-scripts": "^3.3.0",
+    "react-select": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
