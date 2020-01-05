@@ -18,6 +18,7 @@ const IndexGiphy = () => {
 
             <div style={{marginTop:'2%', width: '350px'}}>
                 <img src={url} />
+                <img src="https://giphy.com/gifs/cool-kristen-stewart-5Lh8W03qPLD0I" alt=""/>
             </div>
         </>
     )

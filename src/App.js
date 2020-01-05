@@ -8,15 +8,16 @@ import Graph_D3 from './Component/Graph-D3/Graph_D3';
 import SendBoxChart from './Component/Chart/SendBoxChart'; 
 import Babelon from './Component/Babelon/Babelon';
 import Responsive from './Component/Responsive/Responsive';
-import Subscribe from './Component/NewsSubscribe/Subscribe'
-import IndexGiphy from './Component/GiphyNew/IndexGiphy'
+import Subscribe from './Component/NewsSubscribe/Subscribe';
+import IndexGiphy from './Component/GiphyNew/IndexGiphy';
+import Form from './Component/Form/Form'
 
 
 function App() {
 
   return (
     <> 
-      <IndexGiphy /> 
+      <Form /> 
     </>
   )
 }
