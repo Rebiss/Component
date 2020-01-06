@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useForm } from '../Hooks/useForm';
 import { useFetch } from '../Hooks/useFetch';
 import '../Hooks/hooks.css'
@@ -8,6 +8,7 @@ export default function State() {
     const [caunt, setCaunt] = useState(() => JSON.parse(localStorage.getItem('caunt')));
 
     const {data, loading} = useFetch(`http://numbersapi.com/${caunt}/trivia`);
+    const inputRef = useRef()
 
     useEffect(() => {
         localStorage.setItem('caunt', JSON.stringify(caunt))
@@ -28,11 +29,14 @@ export default function State() {
              <hr/>
    
              <hr/>
-             <input type='text' placeholder='E-mail' name='email' value={values.email} onChange={handleChange}/>
+             <input type='text' placeholder='E-mail' name='email' ref={inputRef} value={values.email} onChange={handleChange}/>
              <hr/>
              <input type='text' placeholder='Firstname' name='firstname' value={values.firstname} onChange={handleChange}/>
              <hr/>
              <input type='password' placeholder='Password' name='password' value={values.password} onChange={handleChange}/>
+             <div>
+                 <button onClick={() => inputRef.current.focus() }> Ref </button>
+             </div>
          </div>
     )
 }
