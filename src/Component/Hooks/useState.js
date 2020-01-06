@@ -1,6 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { useForm } from '../Hooks/useForm';
 import { useFetch } from '../Hooks/useFetch';
+import { useMeasure } from '../Hooks/useMeasure';
 import '../Hooks/hooks.css'
  
 export default function State() {
@@ -8,22 +9,27 @@ export default function State() {
     const [caunt, setCaunt] = useState(() => JSON.parse(localStorage.getItem('caunt')));
 
     const {data, loading} = useFetch(`http://numbersapi.com/${caunt}/trivia`);
-    const inputRef = useRef()
+    const inputRef = useRef();
 
     useEffect(() => {
         localStorage.setItem('caunt', JSON.stringify(caunt))
-    }, [caunt]); 
+    }, [caunt]);
+ 
+    // Start -> custom useLayoutEffect hooks //
+    const [rect, customRef] = useMeasure([data])
+    //End // 
 
     return (
          <div className='component-box-lst'>
              <hr/>
              <div>
-                 {loading ? 'Loading' : data}
+                 <div ref={ customRef }>{ loading ? 'Loading' : data }</div>
+                 <pre>{ JSON.stringify(rect, null, 2) }</pre>
                  <hr />
                  <div>
-                    <button onClick={() => setCaunt(c => Number(c) + 1)}> Incriment </button>
+                    <button onClick={() => setCaunt(c => Number(c) + 1) }> Incriment </button>
                     <hr />
-                    <button onClick={() => setCaunt(c => Number(c) - 1)}> Dicrement </button>
+                    <button onClick={() => setCaunt(c => Number(c) - 1) }> Dicrement </button>
                 </div>
              </div>
              <hr/>
