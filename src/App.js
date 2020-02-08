@@ -12,14 +12,15 @@ import Subscribe from './Component/NewsSubscribe/Subscribe';
 import IndexGiphy from './Component/GiphyNew/IndexGiphy';
 import Form from './Component/Form/Form';
 import Ui from './Component/Form/Ui';
-import State from './Component/Hooks/useState'
+import State from './Component/Hooks/useState';
+import Parent from './Component/Hooks/Parent';
 
 
 function App() {
 
   return (
     <> 
-      <State /> 
+      <Parent /> 
     </>
   )
 }
