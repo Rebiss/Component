@@ -15,14 +15,14 @@ import React from 'react';
 // import State from './Component/Hooks/useState';
 // import Parent from './Component/Hooks/Parent';
 // import P5 from './Component/p5/P5';
-
+import Aframe from './Afreame/Aframe'
 
 
 function EntryPoint() {
 
   return (
     <> 
-      < /> 
+      <Aframe /> 
     </>
   )
 }

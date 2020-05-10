@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.10",
+    "aframe": "^1.0.4",
+    "aframe-react": "^4.4.0",
     "antd": "^4.1.2",
     "babelon": "^1.0.5",
     "bootstrap": "^4.4.1",
