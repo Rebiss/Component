@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './assets/index.css';
-import App from './App';
-import * as serviceWorker from './service/serviceWorker';
+import EntryPoint from './Component';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-serviceWorker.unregister();
+ReactDOM.render(<EntryPoint />, document.getElementById('root'));
