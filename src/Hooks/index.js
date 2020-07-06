@@ -1,4 +1,4 @@
 import React from 'react';
-import { Reducer } from './Reducer/Reducer.jsx';
+import { Counter } from './Counter/Counter.jsx';
 
-export const Hook = () => <Reducer />
+export const Hook = () => <Counter />
