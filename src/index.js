@@ -4,4 +4,4 @@ import ReactDOM from 'react-dom';
 import { Hook } from './Hooks/index.js';
 import { Query } from './Query/index.js';
 
-ReactDOM.render(<Hook />, document.getElementById('root'));
+ReactDOM.render(<Query />, document.getElementById('root'));
