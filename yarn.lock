@@ -4265,7 +4265,7 @@ debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "^2.1.1"
 
-"debug@github:ngokevin/debug#noTimestamp":
+debug@ngokevin/debug#noTimestamp:
   version "2.2.0"
   resolved "https://codeload.github.com/ngokevin/debug/tar.gz/ef5f8e66d49ce8bc64c6f282c15f8b7164409e3a"
 
@@ -4482,7 +4482,7 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-"document-register-element@github:dmarcos/document-register-element#8ccc532b7f3744be954574caf3072a5fd260ca90":
+document-register-element@dmarcos/document-register-element#8ccc532b7f3744be954574caf3072a5fd260ca90:
   version "0.5.4"
   resolved "https://codeload.github.com/dmarcos/document-register-element/tar.gz/8ccc532b7f3744be954574caf3072a5fd260ca90"
 
@@ -10339,6 +10339,13 @@ react-p5@^1.3.2:
   dependencies:
     p5 "^0.10.2"
 
+react-query@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.5.6.tgz#fce28e9be4d8ab6000c257f69ef74ed49cdf0636"
+  integrity sha512-mN3y2EqRVmM2PAdqqt2wBzMZI0eO1+UMcEWXyOTnKZuoqpLSTdw87C+LdvhMrmmwlOvnV8sZZynuht/tVJv0cA==
+  dependencies:
+    ts-toolbelt "^6.9.4"
+
 react-responsive@^8.0.3:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/react-responsive/-/react-responsive-8.1.0.tgz#afcc2293c46a37b1e7926ff7fef66bcb147e7cba"
@@ -11754,7 +11761,7 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-"three-bmfont-text@github:dmarcos/three-bmfont-text#1babdf8507c731a18f8af3b807292e2b9740955e":
+three-bmfont-text@dmarcos/three-bmfont-text#1babdf8507c731a18f8af3b807292e2b9740955e:
   version "2.3.0"
   resolved "https://codeload.github.com/dmarcos/three-bmfont-text/tar.gz/1babdf8507c731a18f8af3b807292e2b9740955e"
   dependencies:
@@ -11946,6 +11953,11 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
+
+ts-toolbelt@^6.9.4:
+  version "6.13.28"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.13.28.tgz#7afbdd5b95ccb947085aec400fe59545d02de448"
+  integrity sha512-89amEuUFvgcErtKh0+8egz8I+DertVSSGYaFAtNK56H7DXx4czFDL+wApauD4xSq4NZrB12kM++ZYu9e/1l3lA==
 
 tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.13.0"
