@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavBar } from './components/Navbar';
-import { Man } from './components/Man';
+import { Men } from './components/Men';
+import { Planets } from './components/Planets';
 
 // import {} from './components/Navbar';
 
 
 export const Query = () => {
+    const [ page, setPage ] = useState('planets');
     return (
         <div>
             <h1> Info </h1>
-            <NavBar>
+            <NavBar />
             <div className='content'>
-                <Man />
+                { page === 'planets' ? <Planets /> : <Men /> }
             </div>             
         </div>
     )
-};
+}

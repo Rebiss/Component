@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Man = () => {
+export const Men = () => {
     return (
         <div>
-            Man
+            Men
         </div>
     )
 }
