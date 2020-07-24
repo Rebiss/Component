@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Nav = (setPage) => {
+export const N = (setPage) => {
     return (
         <nav>
             <button onClick={ () => setPage('planets') }> Planets </button>

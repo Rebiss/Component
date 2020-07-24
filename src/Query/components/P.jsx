@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Planets = () => {
+export const P = () => {
     return (
         <div>
             Planets
