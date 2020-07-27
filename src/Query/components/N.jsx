@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { arrayOf, string } from 'prop-types';
 
-export const N = (setPage) => {
+
+export const N = ({setPage}) => {
     console.log('setPage', setPage);
-    const onFuncClick = () => {
-        setPage('planets')
-    }
     return (
         <nav>
-            <button onClick={ onFuncClick }> Planets </button>
-            <button onClick={ () => console.log('Hello ') }> Man </button>
+            <button onClick={ () => setPage('planets') }> Planets </button>
+            <button onClick={ () => setPage('people') }> Man </button>
         </nav>
     )
 }
+
+N.propTypes = { setPage: arrayOf(string) }
