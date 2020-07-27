@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 
 const fetchPlanets = async () => {
     const response = await fetch("https://swapi.dev/api/planets/");
-    return response.json();
+    return response.json()
 
 }
 
@@ -13,7 +13,14 @@ export const P = () => {
 
     return (
         <div>
-            Planets
+            <h2>Planets</h2>
+            { status === 'loading' && ( <div> Loading... </div> )}
+            { status === 'error' && (<div> Error fetching </div> )}
+            { status === 'success' && (
+                <div>
+                    { data.results.map( p => <div key={data.results.diameter}>{ p.name } </div>)}
+                </div>
+            )}
         </div>
     )
 }
